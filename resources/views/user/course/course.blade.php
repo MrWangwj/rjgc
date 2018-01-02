@@ -695,7 +695,6 @@
                 },
                 function (data) {
                     if(data.code === 1){
-                        alert(data.msg);
                         location.reload();
                     }else{
                         alert(data.msg);
