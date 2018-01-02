@@ -16,6 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::any('/wechat', "WeChatController@serve");
 Route::any('/menu', 'WeChatController@menu');
 
+Route::any('/test', 'WeChatController@test');
+
 Route::get('/user/msg/disable', function (){
     return view('user.msg.disable');
 });

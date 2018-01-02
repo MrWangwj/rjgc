@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 
 class User extends Model
 {
@@ -23,15 +24,20 @@ class User extends Model
 
     //通过openID创建用户
     public static function createUserByOpenId($openid){
-        $app = app('wechat.official_account');
-        $user = $app->user->get($openid);
+        try{
+            $app = app('wechat.official_account');
+            $user = $app->user->get($openid);
 
-        $userData = [
-            'openid' => $openid,
-            'name' => $user['nickname'],
-            'sex' => $user['sex'],
-        ];
-        return self::firstOrCreate($userData);
+            $userData = [
+                'openid' => $openid,
+                'name' => $user['nickname'],
+                'sex' => $user['sex'],
+            ];
+            return self::firstOrCreate($userData);
+        }catch (\Exception $e){
+            Log::info($e);
+        }
+
     }
 
 }

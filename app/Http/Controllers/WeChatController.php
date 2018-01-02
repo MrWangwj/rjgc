@@ -56,7 +56,7 @@ class WeChatController extends Controller
     public function test(){
         $app = app('wechat.official_account');
 
-        dd($app->user->get('oD36aw5VyH_yP4eYB8vbCr-wsnew'));
+        dd($app->user->list());
 
     }
 
