@@ -84,14 +84,19 @@ class Course extends Model
             'form_params' => $postData,
         ]);
 
-//        $myfile = fopen("newfile.html", "w") or die("Unable to open file!");
+//        $myfile = fopen("/Applications/MAMP/htdocs/hist_course/test.txt", "w");
 //
+//        $txt = "Steve Jobs\n";
+//        fwrite($myfile, $txt);
 //        fwrite($myfile, $r->getBody()->getContents());
 //        fclose($myfile);
 
 
+
+
+
         $crawler = new Crawler();
-        $crawler->addHtmlContent($r->getBody()->getContents(), 'gb2312');
+        $crawler->addHtmlContent($r->getBody(), 'gb2312');
 
         $text = $crawler->filter('#divLogNote>font')->text();
         return $text;
@@ -122,8 +127,15 @@ class Course extends Model
             'cookies' => $jar,
         ]);
 
+//                $myfile = fopen("/Applications/MAMP/htdocs/hist_course/test.txt", "w");
+//
+//        $txt = "Steve Jobs\n";
+//        fwrite($myfile, $txt);
+//        fwrite($myfile, $course->getBody()->getContents());
+//        fclose($myfile);
+
         $crawler = new Crawler();
-        $crawler->addHtmlContent($course->getBody()->getContents(), 'gb2312');
+        $crawler->addHtmlContent($course->getBody()->getContents(), 'GB2312');
 
         $html = '';
 

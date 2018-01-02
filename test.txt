@@ -1,0 +1,73 @@
+Steve Jobs
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<HEAD>
+		<title>正选结果</title>
+		<meta name="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+		<meta name="CODE_LANGUAGE" Content="C#">
+		<meta name="vs_defaultClientScript" content="JavaScript">
+		<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+		<LINK href="../_style/styles_Rpt.css" type="text/css" rel="stylesheet">
+		<script language="JavaScript" src='../include/scr/ind_HTML_hr.js'></script>
+		<LINK href="../_style/ymPrompt.css" type="text/css" rel="stylesheet">
+		<script language="JavaScript" src='../js/ymPrompt.js'></script>
+		<script language="JavaScript">
+			function openWin(theID,vT)
+			{	
+				var theURL;//w,h,Tform;
+				if(vT=='kc'){
+					//w=480,h=300;
+					//eval("Tform='width="+w+",height="+h+",resizable=yes'");
+					theURL = "../JXJH/INFO_KC.aspx?id="+theID.getAttribute("value");
+				}
+				else if(vT=='Tea'){
+					//w=450,h=400;
+					//eval("Tform='width="+w+",height="+h+"'");
+					theURL = "../JXZY/INFO_Teacher.aspx?id="+theID.getAttribute("value");
+				}
+				else if(vT=='xkmc'){
+					//w=650,h=380;
+					//eval("Tform='width="+w+",height="+h+"'");
+					theURL = "../WSXK/j_zxb_bjrs.aspx?id="+theID.getAttribute("value");
+				}
+				//pop=window.open(theURL,'winKPT',Tform);
+				ymPrompt.win({message:theURL,width:550, height:400,title:'课程信息',handler:doHanler,maxBtn:false,minBtn:false,closeBtn:true,iframe:true});
+			}
+			
+			function doHanler(tp){
+			
+			}
+			
+			
+			
+			function OpenWindow(vURL,vKCMC,vSKBJ,vKCID)
+			{
+				var theURL;
+				winName="winKPT";
+				Tform='width=900,height=600,scrollbars=yes,menubar=no,resizable=yes,location=no,status=no';
+				theURL =vURL+'?kcmc='+vKCMC+'&skbj='+vSKBJ+'&kcid='+vKCID;
+				pop=window.open(theURL,winName,Tform);
+				pop.moveTo(0,0);
+			}
+			function refresh()
+			{ 
+				this.location = this.location; 
+			} 
+		</script>
+	</HEAD>
+	<body  onselectstart=window.event.returnValue=false oncontextmenu=window.event.returnValue=false  ondragstart=window.event.returnValue=false onsource=window.event.returnValue=false 
+	leftMargin="0" topMargin="0" marginheight="0" marginwidth="0">
+		<form action="stu_zxjg_rpt.aspx?func=1" method="post" name="form1">
+			<table height="100%" cellSpacing="0" cellPadding="0" width="100%" border="0" align="center">
+				<tr>
+					<td align="left" width="100%" height="95%" valign="top">
+						<table id="pageRpt" cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td>
+	<TABLE WIDTH=645 BORDER=0 align=center CELLPADDING=0 CELLSPACING=0 bordercolorlight=#89bfa7 bordercolordark=#FFFFFF><tr><td align=left width='100%'>学号：20151515105&ensp;&ensp;姓名：王巍瑾</td></tr></table><TABLE WIDTH=645 BORDER=0 align=center CELLPADDING=0 CELLSPACING=1 bgcolor=#89bfa7 ><tr style='background-color:#f4fffb;'><td align=left width=100% colspan=9>主修年级/专业：2015/计算机科学与技术（软件方向）1514对</td></tr><tr style='background-color:#f4fffb;'><td align=left width=100% colspan=9>理论课程</td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' rowspan=2>&ensp;</td><td align=center width='60px' rowspan=2 >学分</td><td align=center width='180px' rowspan=1 colspan=3 style='border-left-width:0px;'><br></td><td align=center width='60px' rowspan=2 >门数</td><td align=center width='180px' rowspan=1 colspan=3 style='border-left-width:0px;'><br></td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' rowspan=1>专业限选</td><td align=center width='60px' rowspan=1>专业任选</td><td align=center width='60px' rowspan=1>公共任选</td><td align=center width='60px' rowspan=1>专业限选</td><td align=center width='60px' rowspan=1>专业任选</td><td align=center width='60px' rowspan=1>公共任选</td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' >限选</td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >4.0<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >2<br></td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' >已选</td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' >可选</td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >40.0<br></td><td align=center width='60px' >4.0<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >40<br></td><td align=center width='60px' >2<br></td></tr><tr style='background-color:#f4fffb;'><td align=center width='60px' >指定</td><td align=center width='60px' >23.5<br></td><td align=center width='60px' >14.5<br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td><td align=center width='60px' >9<br></td><td align=center width='60px' >5<br></td><td align=center width='60px' ><br></td><td align=center width='60px' ><br></td></tr></table><br><div style='text-align:center;width:1497px'><table WIDTH=100% style='border:black 1px solid;' border='1' align=center CELLPADDING=0 CELLSPACING=0><tr><td style='border:0px;width:40px;padding:0px;margin:0px'><table style='border:0px;padding:0px;margin:0px;width:40px;' border='0' align=center CELLPADDING=0 CELLSPACING=0><tr><td style='border-bottom:black 1px solid;height:40px;text-align:center;padding:0px;margin:0px'>选定</td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel0' id='chkDel0' type=checkbox value='130362-048#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel1' id='chkDel1' type=checkbox value='500953-052#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel2' id='chkDel2' type=checkbox value='500957-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel3' id='chkDel3' type=checkbox value='500964-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel4' id='chkDel4' type=checkbox value='500972-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel5' id='chkDel5' type=checkbox value='500963-002#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel6' id='chkDel6' type=checkbox value='500964-002#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel7' id='chkDel7' type=checkbox value='500965-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel8' id='chkDel8' type=checkbox value='500966-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel9' id='chkDel9' type=checkbox value='500960-001#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;border-bottom:black 1px solid;height:19px' ><input name='chkDel10' id='chkDel10' type=checkbox value='500953-053#' disabled></td></tr><tr><td align=center style='padding:0px;margin:0px;height:19px' ><input name='chkDel11' id='chkDel11' type=checkbox value='500963-001#' disabled></td></tr></table></td><td style='padding:0px;margin:0px;border-left:black 1px solid;border-right:0px;border-top:0px;border-bottom:0px;width:1457px;text-align:left;'><img width='1457' height='280' src='../znpk/DrawKbimg.aspx?w=1457&h=280&xn=2017&xq=0&zfx=0&type=xzxjg'></td></tr></table></div><input type=hidden name=chkCount id=chkCount value=12><input type=hidden name=deleteValue id=deleteValue ><input type=hidden name=sel_xnxq id=sel_xnxq value = '20170' ><TABLE WIDTH='100%' BORDER=0 align='center' CELLPADDING=0 CELLSPACING=0 bordercolorlight='#89bfa7' bordercolordark='#FFFFFF'><TR><td height=30 align=right width='100%' style='display:none'><input type=submit name=Submit value=提交 class=button></td></tr></table>
+</td></tr></table></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</HTML>
