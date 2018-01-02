@@ -1,7 +1,7 @@
 
 @extends('user.layout.layout')
 
-@section('title', '添加课程')
+@section('title', '提示')
 
 
 @section('content')

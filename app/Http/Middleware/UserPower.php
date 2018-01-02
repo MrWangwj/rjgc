@@ -20,7 +20,10 @@ class UserPower
         $openid =session('wechat.oauth_user')->id;
         $user = User::getUserByOpenId($openid);
 
-        if(!$user || $user->is_del == 1)
+        if(!$user)
+            return redirect('/user/msg/error');
+
+        if($user->is_del == 1)
             return redirect('/user/msg/disable');
         return $next($request);
     }
