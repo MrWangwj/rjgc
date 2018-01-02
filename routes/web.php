@@ -21,6 +21,10 @@ Route::any('/test', 'WeChatController@test');
 Route::get('/user/msg/disable', function (){
     return view('user.msg.disable');
 });
+Route::get('/user/msg/error', function (){
+    return view('user.msg.error');
+});
+
 
 Route::group(['middleware' => ['web', 'wechat.oauth:snsapi_userinfo', 'user.status'], 'prefix' => 'user'],function (){
     Route::get('/tt', function(){
